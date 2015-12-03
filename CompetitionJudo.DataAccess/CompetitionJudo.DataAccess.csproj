@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F2D936B-561E-48B7-A07D-5B1C33719EBE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CompetitionJudo.DataAccess</RootNamespace>
+    <AssemblyName>CompetitionJudo.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Donnees\Categorie.cs" />
+    <Compile Include="Donnees\Club.cs" />
+    <Compile Include="Donnees\Competiteur.cs" />
+    <Compile Include="Donnees\Competition.cs" />
+    <Compile Include="Donnees\Coordonnee.cs" />
+    <Compile Include="Donnees\Donnee.cs" />
+    <Compile Include="Donnees\Groupe.cs" />
+    <Compile Include="Donnees\NewDictionary.cs" />
+    <Compile Include="Donnees\OrganisationCombat.cs" />
+    <Compile Include="Donnees\Presence.cs" />
+    <Compile Include="Donnees\ResultatCompetition.cs" />
+    <Compile Include="Donnees\TImeSpan2.cs" />
+    <Compile Include="Donnees\ValiditePoule.cs" />
+    <Compile Include="Groupes\Poule.cs" />
+    <Compile Include="Groupes\PouleDe2.cs" />
+    <Compile Include="Groupes\PouleDe3.cs" />
+    <Compile Include="Groupes\PouleDe4.cs" />
+    <Compile Include="Groupes\PouleDe5.cs" />
+    <Compile Include="Groupes\PouleDe6.cs" />
+    <Compile Include="Groupes\PrintJob.cs" />
+    <Compile Include="Groupes\Sexe.cs" />
+    <Compile Include="Groupes\Tableau.cs" />
+    <Compile Include="Groupes\TableauDe16.cs" />
+    <Compile Include="Groupes\TableauDe32.cs" />
+    <Compile Include="Groupes\TableauDe4.cs" />
+    <Compile Include="Groupes\TableauDe8.cs" />
+    <Compile Include="Manager\CategorieManager.cs" />
+    <Compile Include="Manager\PresenceManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Manager\SexeManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templateP2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templateP3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templateP4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templateP5.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
